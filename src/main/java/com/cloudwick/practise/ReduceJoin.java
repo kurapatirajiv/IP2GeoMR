@@ -27,7 +27,7 @@ public class ReduceJoin {
         Configuration conf = new Configuration();
         Job job = new Job(conf);
         job.setJarByClass(ReduceJoin.class);
-        job.setJobName("Multi Input Path Mapper Application");
+        job.setJobName("Reduce Side Join Application");
 
         // Set input paths for two mapper functions
         MultipleInputs.addInputPath(job, new Path(args[0]),
